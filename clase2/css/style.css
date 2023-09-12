@@ -1,0 +1,38 @@
+/* nuestro codigo CSS */
+/* Regla de CSS
+            1. selector
+            2. {
+            3. nombre de la propiedad :
+            4. valor de la propiedad ;
+            5. }
+         */
+
+/* selector de etiqueta, 
+            todo lo que tenga la etiqueta span, 
+            sera afectado 
+        */
+span {
+  color: white;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+/* selector de ids es # */
+#parrafo_introduccion {
+  color: yellow;
+  font-weight: bold;
+}
+
+#parrafo_introduccion strong {
+  color: darkred;
+}
+
+p {
+  color: white;
+}
+
+/* selector de clases es . */
+.parrafo_magenta {
+  color: darkmagenta;
+  border: 20px red solid;
+}
