@@ -1,0 +1,126 @@
+/* selector hijo */
+/* selecciona la etiqueta 
+    span que sea hijo directo 
+    de la etiqueta div
+*/
+div.selector_hijo > span {
+  font-size: 30px;
+  color: red;
+}
+
+div.selector_hijo a > span {
+  color: brown;
+  font-size: 50px;
+}
+
+/* selector adyacente */
+div.selector_adyacente h3 + p {
+  background-color: black;
+  color: yellow;
+}
+
+div.selector_hermano_general h4 ~ span {
+  background-color: red;
+  color: blue;
+}
+
+/* quitar vineta a la lista  */
+nav ul {
+  list-style: none;
+}
+
+/* Pseudoclases */
+.body2 {
+  background-color: #fcf7f8;
+}
+
+.contenedor {
+  text-align: center;
+  border: 2px solid #e3e3e3;
+  margin: 20px;
+  /* margin: 20px 40px; */
+  /* margin: 20px 5px 10px 40px; */
+}
+
+/* hover es cuando pasamos el mouse sobre un elemento */
+.contenedor > p:hover {
+  color: red;
+}
+
+.enlace {
+  margin: 10px;
+  text-decoration: none;
+  /* se pone el background para 
+    que pueda ser modificado en
+    la pseudoclase :visited
+    */
+  background-color: #fcf7f8;
+}
+
+.enlace:hover {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+/* active es cuando picamos a un elemento  */
+.enlace:active {
+  background-color: black;
+}
+
+.enlace:visited {
+  color: #b1b1b1;
+  /* el background color solo se 
+    puede cambiar si se definio un background 
+    en el estado base del selector
+   */
+  background-color: green;
+}
+
+.enlace:link {
+  color: magenta;
+}
+
+.parrafos p {
+  background-color: grey;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+}
+
+/* first child && last-child */
+.parrafos p:first-child {
+  background-color: #3860ec;
+}
+
+.parrafos p:last-child {
+  background-color: aqua;
+}
+
+/* first of type && last-of-type */
+.elementos p:first-of-type,
+.elementos p:last-of-type {
+  background-color: #3860ec;
+  color: white;
+}
+
+/* nth-child */
+.lista {
+  list-style: none;
+}
+
+/* .lista :nth-child(2)  selecciona el elemento numero 2{ */
+/* .lista :nth-child(even) {   selcciona elementos par*/
+/* .lista :nth-child(odd) selecciona elementos non { */
+/* cuenta del primer elemento hacia el ultimo */
+.lista :nth-child(2) {
+  padding: 15px;
+  background-color: grey;
+  color: #3860ec;
+}
+
+/* cuenta del ultimo elemento hacia el primero */
+.lista :nth-last-child(2) {
+  padding: 15px;
+  background-color: grey;
+  color: #3860ec;
+}
