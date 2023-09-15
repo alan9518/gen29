@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=0"
+    />
+    <title>Responsividad</title>
+
+    <!-- <style>
+        p {
+            margin: 20px;
+            margin: 20px auto;
+            margin: 10px 15px 20px 25px;
+        }
+    </style> -->
+    <!--     
+    <style>
+        /* outline para elementos bloques */
+      div,
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      ul {
+        outline: solid red;
+      }
+
+      /* outline para elementos en linea */
+      a,
+      span,
+      label {
+        outline: solid blue;
+      }
+    </style> -->
+
+    <style>
+      .sectionResponsive {
+        width: 80%;
+        padding: 1rem;
+        border: 1px solid blue;
+      }
+
+      /* media queries */
+      @media screen and (max-width: 720px) {
+        .sectionResponsive {
+          width: 40%;
+          color: white;
+          background-color: black;
+          border: none;
+        }
+      }
+
+      @media screen and (min-width: 1080px) {
+        body {
+          background-color: blue;
+        }
+      }
+
+      /* Media Queries comnunes */
+      /* Extra small devices (phones, 600px and down) */
+      @media screen and (max-width: 600px) {
+        /* aqui van las reglas css */
+      }
+
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media screen and (min-width: 768px) {
+        /* aqui van las reglas css */
+      }
+
+      /* Large devices (laptops/desktops, 992px and up) */
+      @media screen and (min-width: 992px) {
+        /* aqui van las reglas css */
+        body {
+          background-color: black;
+        }
+      }
+
+      /* Extra large devices (large laptops and desktops, 1200px and up) */
+      @media screen and (min-width: 1200px) {
+        /* aqui van las reglas css */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- elementos bloque -->
+    <!-- <div>div</div>
+    <p>parrafp</p>
+    <h1>title</h1>
+    <h2>title</h2>
+    <h3>title</h3>
+    <h4>title</h4>
+    <h5>title</h5>
+    <h6>title</h6>
+    <ul>
+      lista
+    </ul> -->
+
+    <!-- elementos en linea -->
+    <!-- <a href="">enlace</a>
+    <span>span adadasdasdalkjasdlksjdalksdja </span>
+    <label for="">label para input fielcd</label> -->
+    <div>
+      <section class="sectionResponsive">
+        <h1>Secci&oacute;n responsiva</h1>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+          vel voluptatum doloremque rem ab cumque veniam saepe nulla laudantium
+          magni commodi facilis amet velit dolorum, ex blanditiis voluptatem a
+          officia?
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
