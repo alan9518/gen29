@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 80%;
+  min-height: 700px;
+
+  border: 10px solid #000;
+  position: relative;
+  /* convierte el elemto en caja flexible */
+}
+
+.container-row {
+  display: flex;
+  /* flex direcion */
+  flex-direction: row;
+
+  /* mover los elementos de forma horizontal
+    flex-start|flex-end|center|space-around|space-between|space-evenly
+   */
+  justify-content: space-evenly;
+
+  /* mover los elementos de forma vertical */
+  align-items: center;
+
+  /* 
+    agrupar los elementos en bloques
+    wrap los envuelve y distribuye en filas y columnas
+    nowrap es el default y no los distribuye
+    wrap-reverse envuelve y distribuye en filas y columnas pero al reves
+   */
+  flex-wrap: wrap;
+  /* 
+    solo funciona si flex:wrap esta en wrap 
+    permite distribuir las filas de forma vertical
+  */
+  align-content: center;
+}
+
+@media screen and (max-width: 640px) {
+  .item {
+    flex-grow: 1;
+  }
+}
+
+.item {
+  width: 150px;
+  height: 150px;
+  background-color: #fb7185;
+  padding: 1em;
+  font-weight: 700;
+  color: #f1f5f9;
+  text-align: center;
+  border: 10px solid #e11d48;
+  border-radius: 10px;
+}
+
+.item-14,
+.item-13 {
+  background-color: green;
+  /* flex-grow: 1; */
+}
+
+.item-13 {
+  flex-grow: 1;
+}
+
+.item-14 {
+  flex-grow: 1;
+}
+
+.container-column {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+  /* align-items: flex-start; */
+}
+
+/* ejes de colores para ejemplo */
+.axis {
+  position: absolute;
+  z-index: 20;
+}
+
+.cross-axis {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 100%;
+  background-color: blue;
+}
+
+.main-axis {
+  top: 50%;
+  transform: translateY(-50%);
+  height: 5px;
+  width: 100%;
+  background-color: red;
+}
+
+.axis::after {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 2em;
+}
+
+.main-axis::after {
+  position: absolute;
+  content: "Main Axis";
+  color: red;
+}
+
+.cross-axis::after {
+  white-space: nowrap;
+  content: "Cross Axis";
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: blue;
+}
