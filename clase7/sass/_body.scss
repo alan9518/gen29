@@ -1,0 +1,33 @@
+body {
+  background-color: $bgColorBlack;
+  font-size: $lgBodyFontSize;
+  color: $textColor;
+}
+
+.monospaceFontSection {
+  font-family: $primaryFont;
+  padding: $medidasCaja;
+  border: $bordes;
+}
+
+.courierFontSection {
+  font-family: $secondaryFont;
+  margin: $medidasCaja;
+  border: $bordes;
+}
+
+.sectionLists {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+    li {
+      padding: 2em;
+      color: blue;
+      border: 1px solid blue;
+    }
+    .first {
+      flex-grow: 1;
+    }
+  }
+}

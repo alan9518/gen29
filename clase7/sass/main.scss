@@ -1,0 +1,17 @@
+// variables de estilos
+$bgColorBlack: #745555;
+
+$primaryFont: monospace;
+$secondaryFont: "Courier New", Courier, monospace;
+$textColor: #4b0505;
+
+$medidasCaja: 10px 20px 50px 60px;
+$bordes: none;
+
+// esta es para celullares
+$xsBodyFontSize: 1.2em;
+$lgBodyFontSize: 2.2em;
+
+@import "body";
+@import "tablet";
+@import "responsive";
